@@ -1,0 +1,28 @@
+1. Mong muốn và định hướng sau khi học xong môn học: có thể code ra được 1 app mobile một mình. Định hướng có thể tạo ra được niềm đam mê với lập trình mobile và có thể theo chuyên ngành này để ra trường kiếm việc.
+2. Trong 10 năm tới, lập trình di động sẽ tiếp tục phát triển mạnh mẽ vì những lý do sau:
+
+- Nhu cầu sử dụng thiết bị di động tăng cao:
+
+Smartphone và tablet đã trở thành công cụ thiết yếu trong đời sống, từ giải trí, làm việc đến giáo dục. Xu hướng làm việc từ xa, học trực tuyến, và thương mại điện tử phụ thuộc nhiều vào ứng dụng di động.
+
+Thị trường điện thoại thông minh tiếp tục mở rộng, đặc biệt ở các quốc gia đang phát triển, tạo ra lượng người dùng mới khổng lồ.
+
+- Công nghệ hỗ trợ liên tục tiến hóa:
+
+5G, IoT, AI/ML mở ra cơ hội phát triển ứng dụng thông minh hơn, như điều khiển thiết bị IoT, trợ lý ảo cá nhân hóa, hoặc ứng dụng AR/VR.
+
+Các nền tảng như iOS và Android liên tục cập nhật tính năng mới (ví dụ: machine learning trên thiết bị, tối ưu hóa phần cứng).
+
+- Sự phát triển của cross-platform frameworks:
+
+Công cụ như Flutter, React Native giúp tối ưu chi phí và thời gian phát triển, thu hút nhiều doanh nghiệp đầu tư vào ứng dụng di động.
+
+- Ứng dụng web tiến bộ (PWA) không thay thế hoàn toàn native app:
+
+Dù PWA cải thiện, ứng dụng native vẫn vượt trội về hiệu năng, tích hợp phần cứng, và trải nghiệm người dùng.
+
+- Công nghệ mới nổi cần nền tảng di động:
+
+Metaverse, xe tự lái, và thiết bị đeo thông minh đòi hỏi ứng dụng di động để kết nối và điều khiển.
+
+Tóm lại, lập trình di động sẽ không chỉ tồn tại mà còn phát triển đa dạng hơn nhờ sự kết hợp giữa nhu cầu thị trường, công nghệ tiên tiến, và khả năng thích ứng với xu hướng mới.
