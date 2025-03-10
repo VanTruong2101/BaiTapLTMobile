@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+
+    <!-- Nhãn và EditText cho nhân viên -->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Hệ thống"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Nhân viên"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Quản lý Thư viện"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+    <!-- Nhãn và danh sách sách -->
+
+    <!-- Nút Thêm -->
+
+    <!-- Navigation Bar -->
+
+    <EditText
+        android:id="@+id/editTextNhanVien"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Nguyen Van A"
+        android:text="Nguyen Van A"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btnDoi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNhanVien" />
+
+    <Button
+        android:id="@+id/btnDoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:text="Đổi"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextNhanVien"
+        app:layout_constraintTop_toBottomOf="@id/tvNhanVien" />
+
+    <TextView
+        android:id="@+id/tvDanhSachSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Danh sách sách"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNhanVien" />
+
+    <LinearLayout
+        android:id="@+id/layoutSach"
+        android:layout_width="380dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_background"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDanhSachSach">
+
+        <CheckBox
+            android:id="@+id/checkBoxSach01"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sách 01"
+            android:textColor="#CCBBBB"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSach02"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sách 02"
+            android:textColor="#CCBBBB"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#2196F3"
+        android:text="Thêm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutSach" />
+
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnQuanLy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Quản lý"
+            android:src="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/btnDanhSach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Danh sách"
+            android:src="@drawable/list_icon" />
+
+        <ImageButton
+            android:id="@+id/btnNhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Nhân viên"
+            android:src="@drawable/icon_nhanvien" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
