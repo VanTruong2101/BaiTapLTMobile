@@ -42,7 +42,7 @@ fun OnboardingScreen() {
                   onNextClicked = { coroutineScope.launch { currentScreen = 4 } },
                    onBackClicked = { coroutineScope.launch { currentScreen = 2 } }
            )
-            // Bạn có thể thêm các màn hình khác nếu cần
+            // có thể thêm các màn hình khác nếu cần
         }
     }
 }
