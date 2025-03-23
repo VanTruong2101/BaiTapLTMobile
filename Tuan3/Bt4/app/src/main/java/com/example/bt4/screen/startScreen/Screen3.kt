@@ -1,4 +1,4 @@
-package com.example.bt4.screen
+package com.example.bt4.screen.startScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -17,7 +17,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.layout.ContentScale
 import com.example.bt4.R
 @Composable
-fun Screen2(onNextClicked: () -> Unit, onBackClicked: () -> Unit) {
+fun Screen3(onNextClicked: () -> Unit, onBackClicked: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -38,17 +38,17 @@ fun Screen2(onNextClicked: () -> Unit, onBackClicked: () -> Unit) {
                 color = Color.Blue,
                 modifier = Modifier
 //                    .clickable { onSkipClicked() } // Xử lý sự kiện nhấn vào Skip
+
             )
         }
         Image(
-            painter = painterResource(id = R.drawable.ic_screenfirst),
+            painter = painterResource(id = R.drawable.ic_screen2),
             contentDescription = "Easy Time Management",
             modifier = Modifier
                 .size(350.dp)
                 .padding(bottom = 16.dp),
             contentScale = ContentScale.Fit // Giữ tỷ lệ ảnh
         )
-
 
         // Nút Back và Next
         Row(

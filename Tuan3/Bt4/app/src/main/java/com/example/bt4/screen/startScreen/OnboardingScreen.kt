@@ -1,4 +1,4 @@
-package com.example.bt4.screen
+package com.example.bt4.screen.startScreen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -11,7 +11,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @Composable
-fun OnboardingScreen() {
+fun OnboardingScreen(
+    onFinish: () -> Unit = {}
+) {
     var currentScreen by remember { mutableIntStateOf(0) }
     val coroutineScope = rememberCoroutineScope()
 
@@ -38,11 +40,10 @@ fun OnboardingScreen() {
                 onNextClicked = { coroutineScope.launch { currentScreen = 3 } },
                 onBackClicked = { coroutineScope.launch { currentScreen = 1 } }
             )
-                3 -> Screen4(
-                  onNextClicked = { coroutineScope.launch { currentScreen = 4 } },
-                   onBackClicked = { coroutineScope.launch { currentScreen = 2 } }
-           )
-            // có thể thêm các màn hình khác nếu cần
+            3 -> Screen4(
+                onNextClicked = { onFinish() },
+                onBackClicked = { coroutineScope.launch { currentScreen = 2 } }
+            )
         }
     }
 }

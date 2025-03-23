@@ -1,4 +1,4 @@
-package com.example.bt4.screen
+package com.example.bt4.screen.startScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
