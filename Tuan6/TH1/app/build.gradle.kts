@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.th2"
+    namespace = "com.example.th1"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.th2"
+        applicationId = "com.example.th1"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -49,12 +49,18 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    testImplementation(libs.junit)
+    implementation ("androidx.compose.material3:material3:1.3.1")
+    implementation ("com.google.accompanist:accompanist-pager:0.28.0")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.8.9")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.8.9")
     implementation ("androidx.navigation:navigation-compose:2.8.9")
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    testImplementation(libs.junit)
+    implementation ("androidx.compose.material3:material3")
+    implementation ("androidx.compose.material:material-icons-extended")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
