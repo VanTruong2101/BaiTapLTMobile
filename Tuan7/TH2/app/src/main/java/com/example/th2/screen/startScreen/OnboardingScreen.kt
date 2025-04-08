@@ -1,4 +1,4 @@
-package com.example.th1.screen.startScreen
+package com.example.th2.screen.startScreen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
